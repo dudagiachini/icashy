@@ -1,0 +1,124 @@
+/* Set black background color, white text and some padding */
+	footer {
+	width: 100%;
+        bottom:0;
+        background-color: #294351;
+        color: white;
+        padding: 15px;
+	font-family: lato, sans-serif;
+	font-size: 15px;
+	}
+	
+	/* Cor do iCashy: #FF6347 e #FF7F50        #FFA07A (lightsalmon) #FF4500(orangered) */
+    /*   Verde: #18bc9c(escuro) e #81efd9(claro)	*/
+	body {
+	background: -webkit-linear-gradient(#81efd9, #18bc9c); 
+        background: -o-linear-gradient(#81efd9, #18bc9c); 
+        background: -moz-linear-gradient(#81efd9, #18bc9c); 
+        background: linear-gradient (#81efd9, #18bc9c); 
+        background-color: #81efd9; 
+	}
+	
+	header {
+	min-height: 80px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	border-bottom: 0px solid #ccc;
+	background: #294351;
+	z-index: 2;
+	}
+	
+	p.sla{
+	font-family: arial, sans-serif;
+	font-size: 30px;
+	font-weight:bold;
+	color: white;
+	position: fixed;
+	top: 30px;   
+	}
+	
+	body{
+	font-family:britannic ;
+	}
+	
+	h1.titulo{
+	font-family:Britannic Bold, sans-serif;
+	font-size: 50px;
+	font-weight:bold;
+	color: #294351;
+	text-align: center;	
+	}
+	
+	h1.titulo_menor{
+	font-family:Britannic Bold, sans-serif;
+	font-size: 35px;
+	font-weight:bold;
+	color: #294351;
+	text-align: center;	
+	}
+	
+	p.texto{
+	font-family: lato, sans-serif;
+	font-size: 18px;
+	font-align: justify;
+	}
+
+	a.texto{
+	font-family: lato, sans-serif;
+	font-size: 18px;
+	color:#294351;
+	}
+
+	.fixo {
+ 	z-index: 199;
+ 	position: fixed;
+ 	top:80px;
+	}
+
+	#quadrado{
+	font-family: britannic bold, sans-serif;
+	font-size: 20px;
+	font-weight:bold;
+	color: #FFFFFF;
+	align: center;
+	width: 200px;
+	height: 70px;
+	background-color: #294351;
+	border-radius: 20px;
+	padding: 20px; 
+	margin-left: auto;
+    	margin-right: auto;
+	}
+
+	p.exemplo{
+	font-family: lato, sans-serif;
+	font-size: 18px;
+	}
+	
+	p.ss{
+	font-size: 20px;
+	}
+
+	#ff{
+	font-size: 16px;
+	}
+	
+	div.butao{
+	position:relative;
+        align-items: center;
+	left: 35%;
+	}
+	
+	div.butao1{
+	position:relative;
+        align-items: center;
+	left: 45%;
+	}
+
+	div.butao2{
+	position:relative;
+    align-items: center;
+	left: 40%;
+	}

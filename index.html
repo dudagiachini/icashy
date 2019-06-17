@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script language="JavaScript" >
+        function barraNascimento(n){
+            if(n.value.length==2)
+             n.value += '/';
+            if(n.value.length==5)
+             n.value += '/';
+        }
+    </script>    
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+ 
+  <title>iCashy</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-png"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+  <link href="css/freelancer.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+    
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img  src="img/icashy_branco.png" alt="iCashy" width="110" height="50"></a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#inscricao">Inscreva-se</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Entrar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container">
+      <img class="img-fluid mb-5 d-block mx-auto" src="img/money.png" width="400px" alt="">
+      <h1 class="text-uppercase mb-0"></h1>
+      <p align="center"><img src="img/estrela_branca.png" alt="linha" width="225"></p>
+      <h2 class="font-weight-light mb-0">Aprender pode ser divertido!</h2>
+    </div>
+  </header>
+
+  <!-- Inscrição do usúario -->
+  <section class="portfolio" id="inscricao">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-secondary mb-0">Inscreva-se</h2>
+     <br><p align="center"><img src="img/estrela.png" alt="linha" width="200"></p>
+     <form name="inscrição"  method="POST" action="cadastro.php">
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Nome </label>
+                <input class="form-control" name="nome" type="text" placeholder="Qual é o seu nome ?" required="required" data-validation-required-message="Por favor, digite seu nome.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Sobrenome</label>
+                <input class="form-control" name="sobrenome" type="text" placeholder="Qual é o seu sobrenome ?" required="required" data-validation-required-message="Por favor, digite seu sobrenome.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Email </label>
+                <input class="form-control" name="email" type="email" placeholder="Qual é o seu email? " required="required" data-validation-required-message="Por favor, digite seu email.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Data de Nascimento:</label>
+                <input class="form-control" name="data_nasc" type="text"  maxlength="10" placeholder="Qual é sua data de nascimento ?" onkeyup="barraNascimento(this);" required="required" data-validation-required-message="Por favor, digite sua data de nascimento."/>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+			<div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Nome de usuário:</label>
+                <input class="form-control" name="usuario" type="username" placeholder="Escolha um nome de usuário" required="required" data-validation-required-message="Por favor, escolha um usuário.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+			<div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Senha</label>
+                <input class="form-control" name="senha" type="password" placeholder="Escolha uma senha" required="required" data-validation-required-message="Por favor,escolha uma senha.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>         
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary btn-xl" id="botaoinscrever" value="Inscreva-me">
+            </div>
+          </form>
+    </div>
+  </section>
+  
+
+  <!-- Sobre -->
+  <section class="bg-primary text-white mb-0" id="sobre">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-white">Quem somos?</h2>
+      <br><p align="center"><img src="img/estrela_branca.png" alt="linha" width="225"></p>
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+		<br><br><br><br>
+          <p class="lead" align="justify"> A plataforma iCashy funciona como ferramenta para ensino do correto manejo do dinheiro. Esta plataforma conta com uma interface interativa e simples, para fácil compreensão, com jogos de perguntas e respostas e explicações sobre temas de matemática financeira.</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+		  <img src="img/nancy2.png" alt="Nancy" width="300">
+		</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Entrar -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-secondary mb-0">Entrar</h2>
+      <br><p align="center"><img src="img/estrela.png" alt="linha" width="200"></p>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <form name="sentMessage" id="contactForm" action="login.php" method="POST">
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Usuário:</label>
+                <input class="form-control" name="user" type="username" placeholder="Usuário" required="required" data-validation-required-message="Por favor, digite seu usuário.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Senha:</label>
+                <input class="form-control" name="senha" type="password" placeholder="Senha" required="required" data-validation-required-message="Por favor, digite sua senha.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+			<br>
+            <div id="success"></div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary btn-xl" value="Entrar">
+            </div>
+          </form>
+        <a href="#rec" data-toggle="collapse" data-target="#rec"> Esqueci minha senha </a>
+        </div>
+      </div>
+    </div>
+  </section>
+        
+  
+   <!-- Recuperar senha -->
+  <section id="rec">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <form name="sentMessage" id="contactForm" action="recuperar_senha.php" method="POST">
+              <h1>Recuperação de senha </h1>
+              <h6>Digite o email de recuperação</h6>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+               <label>Email:</label>
+                <input class="form-control" name="email_rec" type="email" placeholder="Email de recuperção" required="required" data-validation-required-message="Por favor, digite seu email.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+			<br>
+            <div id="success"></div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary btn-xl" value="Recuperar">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Footer -->
+  
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <p>iCashy ®</p>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+ 
+</body>
+</html>
