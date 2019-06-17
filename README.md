@@ -1,2 +1,2 @@
-# icashy
+# iCashy
 códigos do trabalho
